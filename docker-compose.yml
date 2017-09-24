@@ -1,0 +1,16 @@
+version: "3"
+services:
+  sonos-http:
+    build: ./node-sonos-http-api
+    ports:
+      - "5005:5005"
+    expose: 
+      - "5005"
+    command: npm start
+  web-client:
+    build: './teamtunes'
+    ports: 
+      - '3000:3000'
+    command: npm start
+    env_file:
+      - development.env

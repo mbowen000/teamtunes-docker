@@ -1,0 +1,6 @@
+[submodule "node-sonos-http-api"]
+	path = node-sonos-http-api
+	url = https://github.com/jishi/node-sonos-http-api.git
+[submodule "teamtunes"]
+	path = teamtunes
+	url = https://github.com/mbowen000/teamtunes.git
