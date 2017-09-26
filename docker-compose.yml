@@ -11,8 +11,10 @@ services:
     build: './teamtunes'
     ports: 
       - '3000:3000'
-    command: npm start
+      - '3001:3001' #this is for attaching debugger
+    command: npm run debug
     env_file:
       - development.env
     volumes:
       - ./teamtunes/lib:/usr/app/lib
+      - ./teamtunes/public:/usr/app/public
